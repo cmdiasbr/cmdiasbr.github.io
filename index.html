@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ao meu único amor 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Carta animada */
+    .carta {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 700px;
+      text-align: center;
+      color: #ff4d6d;
+      animation: cartaAnim 2s ease forwards;
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    .carta h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .carta p {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+
+    @keyframes cartaAnim {
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Corações chuva */
+    .heart-fall {
+      position: absolute;
+      font-size: 24px;
+      color: #ff4d6d;
+      animation: fall linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-50px) scale(1); opacity: 1; }
+      100% { transform: translateY(110vh) scale(1.5); opacity: 0; }
+    }
+
+    /* Corações ao clicar */
+    .heart-click {
+      position: absolute;
+      font-size: 24px;
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: none;
+      animation: floatUp 1s ease-out forwards;
+    }
+
+    @keyframes floatUp {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta">
+    <h1>Ao meu único e inteiro amor 💖</h1>
+    <p>
+      Você é minha luz em cada amanhecer,<br>
+      meu sorriso em dias que quero esquecer.<br>
+      Não importa se seus olhos são azuis, verdes ou cinzas,<br>
+      para mim, sempre serão o único olhar<br>
+      que quero ver pelo resto da minha vida.<br>
+      Com você, tudo é mais bonito, mais leve, mais real.<br>
+      Você faz meu mundo completo, meu coração inteiro.<br>
+      E eu só quero continuar a ter você assim por todos os meus dias.
+    </p>
+  </div>
+
+  <!-- Música de fundo -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d9d0d80390.mp3?filename=romantic-melody-110897.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script>
+    // Função para criar corações caindo
+    function criarCoração() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart-fall');
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.animationDuration = (3 + Math.random() * 3) + 's';
+      heart.innerText = '❤️';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+
+    // Criar chuva de corações contínua
+    setInterval(criarCoração, 300);
+
+    // Corações ao clicar
+    document.body.addEventListener('click', function(e){
+      const heart = document.createElement('div');
+      heart.classList.add('heart-click');
+      heart.style.left = e.clientX - 12 + 'px';
+      heart.style.top = e.clientY - 12 + 'px';
+      heart.style.color = `hsl(${Math.random()*360}, 100%, 70%)`;
+      heart.innerText = '❤️';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 1000);
+    });
+  </script>
+
+</body>
+</html>
