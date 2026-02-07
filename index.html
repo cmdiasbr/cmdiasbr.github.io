@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para Minha Amada 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Envelope */
+    .envelope {
+      width: 300px;
+      height: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.6s ease;
+      z-index: 2;
+    }
+
+    /* Aba do envelope */
+    .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff4d6d;
+      clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 0% 100%, 0% 40%);
+      transition: transform 0.6s ease;
+      z-index: 3;
+    }
+
+    /* Carta dentro */
+    .letter {
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      background: rgba(255,255,255,0.95);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      color: #ff4d6d;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 1s ease, transform 1s ease;
+      z-index: 1;
+    }
+
+    .letter h1 {
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+
+    .letter p {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    /* Corações chuva */
+    .heart-fall {
+      position: absolute;
+      font-size: 24px;
+      color: #ff4d6d;
+      animation: fall linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-50px) scale(1); opacity: 1; }
+      100% { transform: translateY(110vh) scale(1.5); opacity: 0; }
+    }
+
+    /* Corações clique */
+    .heart-click {
+      position: absolute;
+      font-size: 24px;
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: none;
+      animation: floatUp 1s ease-out forwards;
+    }
+
+    @keyframes floatUp {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(2); opacity: 0; }
+    }
+
+    /* Envelope aberto */
+    .open .flap {
+      transform: rotateX(180deg);
+    }
+
+    .open .letter {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 4;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="envelope" id="envelope">
+    <div class="flap"></div>
+    <div class="letter">
+      <h1>Ao meu único e inteiro amor 💖</h1>
+      <p>
+        Você é minha luz em cada amanhecer,<br>
+        meu sorriso em dias que quero esquecer.<br>
+        Não importa se seus olhos são azuis, verdes ou cinzas,<br>
+        para mim, sempre serão o único olhar<br>
+        que quero ver pelo resto da minha vida.<br>
+        Com você, tudo é mais bonito, mais leve, mais real.<br>
+        Você faz meu mundo completo, meu coração inteiro.<br>
+        E eu só quero continuar a ter você assim por todos os meus dias.
+      </p>
+    </div>
+  </div>
+
+  <!-- Música de fundo do YouTube -->
+  <iframe
+    id="yt-audio"
+    width="0" height="0"
+    src="https://www.youtube.com/embed/G7ek4zSVLbI?autoplay=1&loop=1&playlist=G7ek4zSVLbI"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+
+  <script>
+    const envelope = document.getElementById('envelope');
+
+    // Abrir carta ao clicar no envelope
+    envelope.addEventListener('click', () => {
+      envelope.classList.add('open');
+    });
+
+    // Chuva de corações contínua
+    function criarCoração() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart-fall');
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.animationDuration = (3 + Math.random() * 3) + 's';
+      heart.innerText = '❤️';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(criarCoração, 300);
+
+    // Corações ao clicar
+    document.body.addEventListener('click', function(e){
+      if(!e.target.closest('.envelope')) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart-click');
+        heart.style.left = e.clientX - 12 + 'px';
+        heart.style.top = e.clientY - 12 + 'px';
+        heart.style.color = `hsl(${Math.random()*360}, 100%, 70%)`;
+        heart.innerText = '❤️';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 1000);
+      }
+    });
+  </script>
+
+</body>
+</html>
