@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carta para o amor da minha vida 💌</title>
+  <title>Ao amor da minha vida 💌</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
@@ -20,7 +20,6 @@
       position: relative;
     }
 
-    /* Chuva de corações */
     .heart-fall {
       position: absolute;
       font-size: 20px;
@@ -94,13 +93,6 @@
       line-height: 1.6;
     }
 
-    .soundcloud-player {
-      width: 100%;
-      max-width: 600px;
-      margin-bottom: 20px;
-    }
-
-    /* SVG Heart Animation Final */
     svg {
       overflow: visible;
       margin-top: 30px;
@@ -151,15 +143,7 @@
 
   <div class="letter-box" id="letterBox">
     <!-- SoundCloud Player -->
-    <div class="soundcloud-player">
-      <iframe 
-        width="100%" 
-        height="166" 
-        scrolling="no" 
-        frameborder="no"
-        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/musichelpdudee/taylor-swift-daylight-piano-version&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false">
-      </iframe>
-    </div>
+    <div class="soundcloud-player" id="soundCloudContainer"></div>
 
     <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyYmkyN25tNW9icTFnYnF6ZmF6NHl4ZmNtYmZtczZ4bTczMWk0M3ZxMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qFmdpUKAFZ6rMobzzu/source.gif" alt="GIF fofo">
     <h1>Ao meu único e inteiro amor 💖</h1>
@@ -185,25 +169,57 @@
   <script>
     const envelope = document.getElementById('envelope');
     const letterBox = document.getElementById('letterBox');
+    const soundCloudContainer = document.getElementById('soundCloudContainer');
+
+    function createHeart(x=null, y=null){
+      const colors = ['#ff6666','#ff99cc','#ff3366','#ffccff','#ff4d6d'];
+      const heart = document.createElement('div');
+      heart.classList.add('heart-fall');
+      heart.style.left = (x !== null ? x : Math.random()*100 + 'vw');
+      heart.style.top = (y !== null ? y : '-50px');
+      heart.style.fontSize = (10+Math.random()*20)+'px';
+      heart.style.animationDuration = (5+Math.random()*5)+'s';
+      heart.style.animationDelay = (Math.random()*5)+'s';
+      heart.style.color = colors[Math.floor(Math.random()*colors.length)];
+      heart.innerText = '❤️';
+      document.body.appendChild(heart);
+    }
+
+    // Função para criar múltiplos corações
+    function createHearts(amount){
+      for(let i=0;i<amount;i++) createHeart();
+    }
 
     envelope.addEventListener('click', () => {
       envelope.style.display = 'none';
       letterBox.style.display = 'flex';
 
-      // Chuva de corações
-      const colors = ['#ff6666','#ff99cc','#ff3366','#ffccff','#ff4d6d'];
-      for(let i=0; i<50; i++){
-        const heart = document.createElement('div');
-        heart.classList.add('heart-fall');
-        heart.style.left = Math.random()*100 + 'vw';
-        heart.style.fontSize = (10+Math.random()*20)+'px';
-        heart.style.animationDuration = (5+Math.random()*5)+'s';
-        heart.style.animationDelay = (Math.random()*5)+'s';
-        heart.style.color = colors[Math.floor(Math.random()*colors.length)];
-        heart.innerText = '❤️';
-        document.body.appendChild(heart);
+      // Adiciona player do SoundCloud dinamicamente (autoplay)
+      const iframe = document.createElement('iframe');
+      iframe.width = "100%";
+      iframe.height = "166";
+      iframe.scrolling = "no";
+      iframe.frameBorder = "no";
+      iframe.src = "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/musichelpdudee/taylor-swift-daylight-piano-version&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false";
+      soundCloudContainer.appendChild(iframe);
+
+      // Chuva inicial
+      createHearts(100);
+    });
+
+    // Adiciona mais corações ao clicar
+    document.body.addEventListener('click', function(e){
+      // Ignora clique no envelope para não duplicar
+      if(e.target.id === 'envelope') return;
+      for(let i=0;i<5;i++){
+        createHeart(e.clientX + Math.random()*30 -15, e.clientY + Math.random()*30 -15);
       }
     });
+
+    // Chuva contínua automática
+    setInterval(() => {
+      createHeart();
+    }, 300); // cria um coração a cada 0.3s
   </script>
 
 </body>
