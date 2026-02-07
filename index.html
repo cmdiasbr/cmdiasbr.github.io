@@ -15,17 +15,18 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
       position: relative;
     }
 
     /* Envelope */
     .envelope {
-      width: 300px;
-      height: 200px;
+      width: 400px;
+      height: 250px;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -33,6 +34,7 @@
       position: relative;
       transition: transform 0.6s ease;
       z-index: 2;
+      flex-shrink: 0;
     }
 
     /* Aba do envelope */
@@ -51,6 +53,7 @@
     /* Carta dentro */
     .letter {
       position: absolute;
+      top: 0;
       width: 90%;
       height: 90%;
       background: rgba(255,255,255,0.95);
@@ -62,6 +65,14 @@
       transform: scale(0.8);
       transition: opacity 1s ease, transform 1s ease;
       z-index: 1;
+      overflow-y: auto;
+    }
+
+    .letter img {
+      width: 100%;
+      max-height: 200px;
+      border-radius: 15px;
+      margin-bottom: 15px;
     }
 
     .letter h1 {
@@ -72,6 +83,31 @@
     .letter p {
       font-size: 1.3em;
       line-height: 1.6;
+    }
+
+    /* Envelope aberto */
+    .open .flap {
+      transform: rotateX(180deg);
+    }
+
+    .open .letter {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 4;
+    }
+
+    /* Player música */
+    .player {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      text-align: center;
+      z-index: 10;
+      display: none;
+      background: rgba(255,255,255,0.9);
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     /* Corações chuva */
@@ -103,24 +139,24 @@
       100% { transform: scale(2); opacity: 0; }
     }
 
-    /* Envelope aberto */
-    .open .flap {
-      transform: rotateX(180deg);
-    }
-
-    .open .letter {
-      opacity: 1;
-      transform: scale(1);
-      z-index: 4;
-    }
-
   </style>
 </head>
 <body>
 
+  <!-- Player de música -->
+  <div class="player" id="player">
+    <audio id="audio" controls autoplay loop>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+
+  <!-- Envelope -->
   <div class="envelope" id="envelope">
     <div class="flap"></div>
     <div class="letter">
+      <!-- GIF topo da carta -->
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyYmkyN25tNW9icTFnYnF6ZmF6NHl4ZmNtYmZtczZ4bTczMWk0M3ZxMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qFmdpUKAFZ6rMobzzu/source.gif" alt="GIF fofo">
       <h1>Ao meu único e inteiro amor 💖</h1>
       <p>
         Você é minha luz em cada amanhecer,<br>
@@ -130,26 +166,22 @@
         que quero ver pelo resto da minha vida.<br>
         Com você, tudo é mais bonito, mais leve, mais real.<br>
         Você faz meu mundo completo, meu coração inteiro.<br>
-        E eu só quero continuar a ter você assim por todos os meus dias.
+        E eu só quero continuar a ter você assim por todos os meus dias.<br>
+        Cada momento ao seu lado é precioso, e nada neste mundo muda o quanto te amo.
       </p>
     </div>
   </div>
 
-  <!-- Música de fundo do YouTube -->
-  <iframe
-    id="yt-audio"
-    width="0" height="0"
-    src="https://www.youtube.com/embed/G7ek4zSVLbI?autoplay=1&loop=1&playlist=G7ek4zSVLbI"
-    frameborder="0"
-    allow="autoplay">
-  </iframe>
-
   <script>
     const envelope = document.getElementById('envelope');
+    const player = document.getElementById('player');
+    const audio = document.getElementById('audio');
 
     // Abrir carta ao clicar no envelope
     envelope.addEventListener('click', () => {
       envelope.classList.add('open');
+      player.style.display = 'block';
+      audio.play().catch(() => {}); // tenta tocar mesmo se o autoplay for bloqueado
     });
 
     // Chuva de corações contínua
