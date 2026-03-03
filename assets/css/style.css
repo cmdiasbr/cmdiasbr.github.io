@@ -937,6 +937,15 @@ section {
   fill: #11dbcf;
 }
 
+
+.portfolio .portfolio-wrap img.portfolio-img {
+  width: 100%;
+  height: 220px;      /* ajuste a altura que ficar melhor */
+  object-fit: cover;  /* corta o excesso mantendo proporção */
+  display: block;
+}
+
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
