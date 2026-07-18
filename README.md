@@ -74,10 +74,10 @@ python3 -m http.server 8080
 
 ## 📬 Get in touch
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/camilalvesdias/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/camilalvesdias/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/cmdiasbr)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat-square&logo=googlescholar&logoColor=white)](https://scholar.google.com.br/citations?hl=pt-BR&user=73dzoHUAAAAJ)
-[![Email](https://img.shields.io/badge/Email-cmdias%40outlook.com.br-0078D4?style=flat-square&logo=microsoftoutlook&logoColor=white)](mailto:cmdias@outlook.com.br)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:cmdias@outlook.com.br)
 
 ---
 
