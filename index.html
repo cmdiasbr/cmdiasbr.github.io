@@ -5,476 +5,588 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Camila Dias Portfolio</title>
-  <meta content="Portfolio of Camila Alves Dias, Data Scientist, Machine Learning Engineer and Python Developer." name="description">
-  <meta content="Camila Dias, Data Scientist, Machine Learning Engineer, Python Developer, AI, Machine Learning, Computer Vision" name="keywords">
+  <title>Camila Alves Dias — Machine Learning Engineer & AI R&D Specialist</title>
+  <meta content="Portfolio of Camila Alves Dias, Machine Learning Engineer, Data Scientist and AI R&D Specialist. Applied AI in Computer Vision, Generative AI and Digital Health." name="description">
+  <meta content="Camila Alves Dias, Machine Learning Engineer, Data Scientist, AI R&D Specialist, Computer Vision, Generative AI, Digital Health, MLOps, PhD" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600,700,800" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v4.8.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Site CSS -->
+  <link href="assets/css/clean.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+  <!-- ======= Nav ======= -->
+  <div class="nav-wrap">
+    <nav class="nav-pill" id="navPill">
+      <a href="#hero" class="nav-logo">camila<span>.dias</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#stack" class="nav-link">Stack</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-    </nav><!-- .nav-menu -->
+      <a href="assets/Camila-Dias-Resume-en.pdf" class="nav-resume-btn" download title="Download Resume"><i class="bi bi-download"></i></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="bx bx-menu"></i></button>
+    </nav>
+  </div>
 
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Camila Alves Dias</h1>
-      <p><span class="typed" data-typed-items="Data Science, Machine Learning, Computer Vision, Python Development"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/cmladias/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/cmdiasbr" class="linkedin"><i class='bx bxl-github'></i></a>
-      </div>
-
-      <!-- Resume download button -->
-      <div class="mt-4">
+  <!-- ======= Hero ======= -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-decor" aria-hidden="true"></div>
+    <div class="container">
+      <p class="badge" data-aos="fade-up">
+        <span class="badge-dot"></span> AI R&amp;D Specialist @ Samsung Brasil
+      </p>
+      <h1 data-aos="fade-up" data-aos-delay="100">
+        Engineering AI<br>
+        <span class="gradient-text">for Real-World Impact.</span>
+      </h1>
+      <p class="hero-subtext" data-aos="fade-up" data-aos-delay="150">
+        Machine Learning Engineer and PhD researcher building production-grade AI — from
+        <strong>computer vision</strong> and <strong>generative AI</strong> to <strong>biosignal models</strong>
+        for digital health.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
         <a href="assets/Camila-Dias-Resume-en.pdf" class="btn btn-primary" download>
           <i class="bi bi-download"></i> Download Resume
         </a>
+        <a href="https://www.linkedin.com/in/camilalvesdias/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <i class="bx bxl-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/cmdiasbr" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=73dzoHUAAAAJ" target="_blank" rel="noopener noreferrer" class="icon-link" title="Google Scholar">
+          <i class="bx bxs-graduation"></i>
+        </a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="250">
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">86</span>
+          <span class="stat-label">Citations</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Best Paper Awards</span>
+        </div>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I am a Data Science and Machine Learning specialist focused on transforming complex business requirements into innovative solutions, with strong experience in computer vision and applied AI in healthcare.</p>
+    <!-- ======= About ======= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="eyebrow">About</span>
+          <h2>Who I am</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+        <div class="about-grid">
+          <div class="about-img" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" alt="Camila Alves Dias" loading="lazy">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <p class="fst-italic">
-              I have solid experience developing and training Deep Learning models for computer vision, including object detection, facial recognition and OCR, as well as building automated data pipelines with Python, SQL and Spark.
-              Currently, I work as an AI R&amp;D Specialist at Samsung, applying advanced Machine Learning, feature engineering and MLOps practices in strategic healthcare projects, and I am completing a PhD in Applied Computing with emphasis on AI for medical data.
+          <div class="about-content" data-aos="fade-left">
+            <p>
+              I'm a <strong>Machine Learning Engineer</strong> with 6+ years of experience delivering deep learning
+              solutions across <strong>digital health</strong>, <strong>generative AI</strong> and
+              <strong>computer vision</strong>. At Samsung Brasil, I develop and help commercialize AI models for
+              wearable devices, supporting sleep and wellness products with production-ready ML pipelines and applied research.
             </p>
+            <p>
+              I work across the full ML lifecycle — feature engineering, model architecture (CNNs, RNNs,
+              Transformers), MLOps deployment and production monitoring — and I'm a PhD researcher in medical AI
+              (teledermatology + NLP), combining academic recognition with hands-on industry execution.
+            </p>
+            <ul class="about-facts">
+              <li><i class="bx bx-map"></i> Campinas, SP, Brazil</li>
+              <li><i class="bx bx-graduation"></i> PhD in Applied Computing — Unisinos (exp. 2026)</li>
+              <li><i class="bx bx-world"></i> English (B2) · Portuguese (Native) · Spanish (A2)</li>
+            </ul>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>I work across the full Machine Learning lifecycle, from data engineering and model development to deployment and monitoring, with a strong focus on computer vision and applied AI in real-world products.</p>
+    <!-- ======= Experience ======= -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="eyebrow">Experience</span>
+          <h2>Where I've made an impact</h2>
+          <p>From backend chatbots to production ML at scale — a track record across antifraud, computer vision, generative AI and digital health.</p>
         </div>
 
-        <div class="row skills-content">
+        <div class="timeline">
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="timeline-item current" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-header">
+              <h3>AI R&amp;D Specialist — Digital Health &amp; Sleep Analysis</h3>
+              <span class="timeline-date">Oct 2025 – Present</span>
             </div>
-
-            <div class="progress">
-              <span class="skill">Machine Learning &amp; Deep Learning<i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">TensorFlow <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+            <p class="timeline-company">Samsung Brasil · Campinas, Brazil</p>
+            <ul>
+              <li>Architected CNN and RNN-based models for multi-class sleep-stage classification using large-scale physiological signals (EEG, heart rate, accelerometer), supporting Samsung's digital wellness roadmap.</li>
+              <li>Engineered end-to-end feature engineering pipelines for biometric signals across 3 signal modalities, improving model robustness and enabling production deployment.</li>
+              <li>Led literature reviews on biosignal ML, translating state-of-the-art research into model improvements that increased classification accuracy.</li>
+              <li>Collaborated cross-functionally with hardware, health research and software teams to integrate ML models into Samsung health platforms.</li>
+            </ul>
           </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PyTorch <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-header">
+              <h3>Data Scientist — GenAI &amp; Customer Experience</h3>
+              <span class="timeline-date">Mar 2024 – Sep 2025</span>
             </div>
+            <p class="timeline-company">Globo · Brazil (remote/hybrid)</p>
+            <ul>
+              <li>Developed and optimized 2 LLM-based chatbot flows using OpenAI GPT-4 and Gemini to improve automated customer support and reduce bot-to-human handoff.</li>
+              <li>Worked on chatbot journeys related to Brazil's Consumer Defense Code (CDC), improving answer quality and intent handling across support scenarios.</li>
+              <li>Monitored NPS and CSAT and designed A/B tests to evaluate the impact of GenAI-driven improvements on satisfaction and service quality.</li>
+              <li>Built ETL pipelines in BigQuery processing millions of daily events and created 5+ Looker Studio dashboards for analytics and business decision-making.</li>
+            </ul>
+          </div>
 
-            <div class="progress">
-              <span class="skill">Computer Vision &amp; Image Processing<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-header">
+              <h3>Machine Learning Engineer — Antifraud, Databricks Lakehouse &amp; MLOps</h3>
+              <span class="timeline-date">Dec 2022 – Oct 2023</span>
             </div>
+            <p class="timeline-company">ClearSale · São Paulo, Brazil</p>
+            <ul>
+              <li>Built 3 PySpark pipelines for antifraud use cases over high-volume transaction streams, reducing latency and supporting real-time scoring.</li>
+              <li>Designed reusable feature pipelines in Databricks Feature Store and Lakehouse architecture, supporting 5+ ML models in production.</li>
+              <li>Orchestrated MLflow-based experiment tracking, model registry and CI/CD workflows in Databricks + Azure, reducing deployment time from days to hours.</li>
+              <li>Implemented governance and monitoring controls for production ML systems, ensuring traceability, compliance and operational stability.</li>
+            </ul>
+          </div>
 
-            <div class="progress">
-              <span class="skill">Data Engineering (SQL, Spark, ETL)<i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-header">
+              <h3>Computer Vision Engineer — Startup, Stakeholder Delivery &amp; Deployment</h3>
+              <span class="timeline-date">Apr 2022 – Nov 2022</span>
             </div>
+            <p class="timeline-company">PixForce · Brazil</p>
+            <ul>
+              <li>Delivered 3+ concurrent end-to-end computer vision projects, from KPI definition and dataset curation to model deployment.</li>
+              <li>Worked directly with stakeholders to define requirements, validate scope and align ML solutions with client needs.</li>
+              <li>Managed dataset capture, annotation and quality control for custom CV problems.</li>
+              <li>Deployed production-ready models at client sites, including OCR and facial recognition pipelines.</li>
+            </ul>
+          </div>
 
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-header">
+              <h3>Backend Developer — Chatbot, Cloud &amp; BI</h3>
+              <span class="timeline-date">Mar 2019 – Aug 2019</span>
+            </div>
+            <p class="timeline-company">Compass UOL · Brazil</p>
+            <ul>
+              <li>Built chatbot solutions with JavaScript and Google ecosystem tools, deployed on Azure, for large Brazilian enterprises.</li>
+              <li>Engineered data pipelines and collected business information for reporting and analytics.</li>
+              <li>Built dashboards in Power BI, Tableau and Oracle SQL to track financial metrics and commercial impact.</li>
+            </ul>
           </div>
 
         </div>
-
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>I am a Data Scientist and Machine Learning Engineer with experience in computer vision, fraud detection, data products and applied AI, combining academic research with industry impact.</p>
+    <!-- ======= Work / Case studies ======= -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="eyebrow">Work</span>
+          <h2>Featured work</h2>
+          <p>A closer look at the problems I've solved end-to-end — from data to production.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>PhD in Applied Computing</h4>
-              <h5>2023 - 2026</h5>
-              <p><em>Universidade do Vale do Rio dos Sinos (UNISINOS)</em></p>
-              <p>PhD project focused on identifying trends in dermatology image datasets and clinical data using NLP to design techniques that enhance raw data significance in healthcare applications.</p>
-            </div>
-            <div class="resume-item">
-              <h4>PhD in Computer Science (incomplete)</h4>
-              <h5>2019 - 2022</h5>
-              <p><em>Federal University of Rio Grande do Sul (UFRGS)</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Master’s Degree in Computer Engineering</h4>
-              <h5>2017 - 2019</h5>
-              <p><em>Federal University of Rio Grande do Sul (UFRGS)</em></p>
-              <p>Development of fuzzy logic-based mathematical models to improve neural network recognition in computer vision, focusing on image restoration.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor’s Degree in Information Systems</h4>
-              <h5>2013 - 2016</h5>
-              <p><em>Faculdades Integradas de Cacoal</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Associate Degree in Systems Analysis and Development</h4>
-              <h5>2013 - 2015</h5>
-              <p><em>Faculdades Integradas de Cacoal</em></p>
-            </div>
+        <div class="work-grid">
 
-            <h3 class="resume-title">Additional Courses</h3>
-            <div class="resume-item">
-              <h4>Scrum Foundation Professional Certificate (SFPC)</h4>
-              <h5>2019</h5>
-              <p><em>CertiProf</em></p>
+          <div class="work-card" data-aos="fade-up">
+            <div class="work-card-top">
+              <div class="work-icon"><i class="bx bx-moon"></i></div>
+              <span class="work-org">Samsung Brasil</span>
             </div>
-            <div class="resume-item">
-              <h4>Project Management with Scrum</h4>
-              <h5>2019</h5>
-              <p><em>Alura</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Six Sigma White Belt</h4>
-              <h5>2019</h5>
-              <p><em>EDTI</em></p>
-            </div>
-
-            <h3 class="resume-title">Languages</h3>
-            <div class="resume-item">
-              <p>English - Upper-intermediate (B2)</p>
-              <p>Spanish - Intermediate</p>
-               <p>Brazilian Portuguese - Native/p>
+            <h3>Sleep Stage Classification</h3>
+            <p>Multi-class sleep-stage classification models built on large-scale physiological signals (EEG, heart rate, accelerometer) for Samsung's digital wellness and wearable products.</p>
+            <div class="tag-row">
+              <span class="tag">CNN</span>
+              <span class="tag">RNN</span>
+              <span class="tag">Biosignals</span>
+              <span class="tag">Python</span>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-
-            <div class="resume-item">
-              <h4>AI R&amp;D Specialist</h4>
-              <h5>Oct 2025 – Present</h5>
-              <p><em>Samsung – Campinas, Brazil</em></p>
-              <ul>
-                <li>Technical contribution to healthcare projects focused on digital innovation for wellness and monitoring.</li>
-                <li>Design and development of customized Machine Learning models for training and analysis of health signals.</li>
-                <li>Execution of exploratory data analysis and data engineering processes to create new predictive features.</li>
-                <li>Collaboration in research environments to transform raw data into actionable health indicators.</li>
-              </ul>
+          <div class="work-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="work-card-top">
+              <div class="work-icon"><i class="bx bx-chat"></i></div>
+              <span class="work-org">Globo</span>
             </div>
-
-            <div class="resume-item">
-              <h4>Data Scientist</h4>
-              <h5>Mar 2024 – Sep 2025</h5>
-              <p><em>Globo – Brazil (remote/hybrid)</em></p>
-              <ul>
-                <li>Development and maintenance of chatbots on the Salesforce platform.</li>
-                <li>Execution of ETL processes and analytical queries in BigQuery for large-scale data analysis.</li>
-                <li>Creation of interactive dashboards using Looker Studio for business stakeholders.</li>
-                <li>Development and training of Machine Learning models for fraud detection.</li>
-                <li>Application of Generative AI using OpenAI and Gemini APIs to enhance chatbot solutions.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Machine Learning Engineer</h4>
-              <h5>Dec 2022 – Oct 2023</h5>
-              <p><em>ClearSale – São Paulo, Brazil</em></p>
-              <ul>
-                <li>Translation of complex business requirements into Data Science solutions.</li>
-                <li>Data extraction, cleaning, preparation and exploratory analysis using Python and SQL.</li>
-                <li>Development and training of Machine Learning models using Scikit-learn and Databricks Feature Store.</li>
-                <li>Construction of scalable data pipelines with Apache Spark / PySpark.</li>
-                <li>Application of MLOps practices ensuring CI/CD for ML models.</li>
-                <li>Statistical inference for model validation and interpretation.</li>
-                <li>Data migration and optimization between SQL Server and PySpark.</li>
-                <li>Technical documentation and model governance in Azure environments.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Computer Vision Developer</h4>
-              <h5>Apr 2022 – Nov 2022</h5>
-              <p><em>PixForce – Brazil</em></p>
-              <ul>
-                <li>Advanced image preprocessing to improve analysis quality in vision pipelines.</li>
-                <li>Development of Deep Learning models for object detection in images and videos.</li>
-                <li>Implementation of systems for pattern recognition, facial recognition, OCR and object classification.</li>
-                <li>Code versioning using Git and collaborative development best practices.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Backend Developer</h4>
-              <h5>Mar 2019 – Aug 2019</h5>
-              <p><em>Compass UOL – Brazil</em></p>
-              <ul>
-                <li>Database administration using SQL.</li>
-                <li>Business intelligence analysis using PowerBI and Oracle SQL.</li>
-                <li>Development and maintenance of interactive dashboards.</li>
-                <li>Data management for chatbot integration using SQL databases and Google Chat API in Azure.</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Academic Highlights</h3>
-            <div class="resume-item">
-              <h4>Academic Exchange</h4>
-              <h5>Jan 2019 – Feb 2019</h5>
-              <p><em>Public University of Navarra – Spain</em></p>
-              <p>Exchange at the Department of Electrical, Electronic and Communication Engineering, working on research topics in computing and engineering.</p>
-            </div>
-
-          </div>
-        </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Publications and Awards</h2>
-          <p>Publications and recognitions obtained during my academic journey in fuzzy systems, computer vision and soft computing.</p>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid portfolio-img" alt="">
-              <div class="portfolio-info">
-                <h4>37th NAFIPS</h4>
-                <p>Conference</p>
-                <div class="portfolio-links">
-                  <!-- permanece como lightbox de imagem -->
-                  <a href="assets/img/portfolio/portfolio-1.jpg"
-                     data-gallery="portfolioGallery"
-                     class="portfolio-lightbox"
-                     title="37th NAFIPS">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <!-- link externo ABRINDO EM NOVA ABA, sem lightbox -->
-                  <a href="https://link.springer.com/chapter/10.1007/978-3-319-95312-0_13"
-                     class=""
-                     target="_blank" rel="noopener noreferrer"
-                     title="Paper Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid portfolio-img" alt="">
-              <div class="portfolio-info">
-                <h4>IFSA/NAFIPS</h4>
-                <p>Conference</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg"
-                     data-gallery="portfolioGallery"
-                     class="portfolio-lightbox"
-                     title="IFSA/NAFIPS">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="https://link.springer.com/chapter/10.1007/978-3-030-21920-8_21"
-                     class=""
-                     target="_blank" rel="noopener noreferrer"
-                     title="Paper Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio3.png" class="img-fluid portfolio-img" alt="">
-              <div class="portfolio-info">
-                <h4>BRACIS/ENIAC</h4>
-                <p>Conference</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio3.png"
-                     data-gallery="portfolioGallery"
-                     class="portfolio-lightbox"
-                     title="BRACIS/ENIAC">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="https://sol.sbc.org.br/index.php/eniac/article/view/38728"
-                     class=""
-                     target="_blank" rel="noopener noreferrer"
-                     title="Paper Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
+            <h3>GenAI Customer Experience</h3>
+            <p>LLM-based chatbot flows using GPT-4 and Gemini for Consumer Defense Code journeys, with A/B-tested improvements to NPS/CSAT and 5+ Looker Studio dashboards over BigQuery.</p>
+            <div class="tag-row">
+              <span class="tag">GPT-4</span>
+              <span class="tag">Gemini</span>
+              <span class="tag">BigQuery</span>
+              <span class="tag">Looker Studio</span>
             </div>
           </div>
 
+          <div class="work-card" data-aos="fade-up">
+            <div class="work-card-top">
+              <div class="work-icon"><i class="bx bx-shield-quarter"></i></div>
+              <span class="work-org">ClearSale</span>
+            </div>
+            <h3>Real-Time Antifraud Pipelines</h3>
+            <p>PySpark pipelines for real-time fraud scoring, reusable feature pipelines in Databricks Feature Store, and MLflow-based CI/CD cutting deployment time from days to hours.</p>
+            <div class="tag-row">
+              <span class="tag">PySpark</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">MLflow</span>
+              <span class="tag">Azure</span>
+            </div>
+          </div>
+
+          <div class="work-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="work-card-top">
+              <div class="work-icon"><i class="bx bx-scan"></i></div>
+              <span class="work-org">PixForce</span>
+            </div>
+            <h3>Computer Vision Deployment</h3>
+            <p>End-to-end computer vision projects from dataset curation to production deployment, including OCR and facial recognition pipelines delivered at client sites.</p>
+            <div class="tag-row">
+              <span class="tag">OCR</span>
+              <span class="tag">Facial Recognition</span>
+              <span class="tag">Object Detection</span>
+            </div>
+          </div>
 
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>If you would like to discuss opportunities, collaborations or projects in Data Science, Machine Learning or Computer Vision, feel free to reach out.</p>
+    <!-- ======= Stack ======= -->
+    <section id="stack" class="section alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="eyebrow">Stack</span>
+          <h2>Tools &amp; technologies</h2>
         </div>
 
-        <div class="row mt-1">
+        <div class="stack-groups">
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Campinas, São Paulo, Brazil</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>cmdias@outlook.com.br</p>
-              </div>   
-
+          <div class="stack-group" data-aos="fade-up">
+            <h4>Machine Learning &amp; Deep Learning</h4>
+            <div class="chip-row">
+              <span class="chip">PyTorch</span>
+              <span class="chip">TensorFlow</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Keras</span>
+              <span class="chip">OpenCV</span>
+              <span class="chip">Hugging Face</span>
+              <span class="chip">CNNs</span>
+              <span class="chip">RNNs</span>
+              <span class="chip">Transformers</span>
             </div>
-
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <!-- Optional contact form here -->
+          <div class="stack-group" data-aos="fade-up" data-aos-delay="60">
+            <h4>MLOps &amp; Cloud</h4>
+            <div class="chip-row">
+              <span class="chip">MLflow</span>
+              <span class="chip">Databricks</span>
+              <span class="chip">Spark / PySpark</span>
+              <span class="chip">Azure ML</span>
+              <span class="chip">BigQuery</span>
+              <span class="chip">Docker</span>
+              <span class="chip">CI/CD</span>
+              <span class="chip">Azure DevOps</span>
+            </div>
+          </div>
+
+          <div class="stack-group" data-aos="fade-up" data-aos-delay="120">
+            <h4>GenAI &amp; NLP</h4>
+            <div class="chip-row">
+              <span class="chip">GPT-4</span>
+              <span class="chip">Gemini</span>
+              <span class="chip">ClinicalBERT</span>
+              <span class="chip">BioBERT</span>
+              <span class="chip">LLM Integration</span>
+              <span class="chip">Chatbots</span>
+            </div>
+          </div>
+
+          <div class="stack-group" data-aos="fade-up">
+            <h4>Programming &amp; Scripting</h4>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">R</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">MATLAB</span>
+            </div>
+          </div>
+
+          <div class="stack-group" data-aos="fade-up" data-aos-delay="60">
+            <h4>Data Engineering &amp; Analytics</h4>
+            <div class="chip-row">
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">ETL / ELT</span>
+              <span class="chip">Looker Studio</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">Oracle SQL</span>
+            </div>
+          </div>
+
+          <div class="stack-group" data-aos="fade-up" data-aos-delay="120">
+            <h4>Monitoring &amp; Collaboration</h4>
+            <div class="chip-row">
+              <span class="chip">MLflow Tracking</span>
+              <span class="chip">Model Registry</span>
+              <span class="chip">Grafana</span>
+              <span class="chip">Git</span>
+              <span class="chip">Jupyter</span>
+              <span class="chip">Salesforce</span>
+            </div>
           </div>
 
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- ======= Education ======= -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="eyebrow">Education</span>
+          <h2>Academic background</h2>
+        </div>
+
+        <div class="edu-grid">
+
+          <div class="edu-card" data-aos="fade-up">
+            <span class="edu-date">2023 – 2026 (expected)</span>
+            <h3>PhD in Applied Computing</h3>
+            <p class="edu-school">Universidade do Vale do Rio dos Sinos (Unisinos)</p>
+            <p class="edu-desc">Research on NLP + Computer Vision for teledermatology datasets in medical AI. Started at UFRGS in 2020, transferred to Unisinos in 2023 to better align with the thesis scope.</p>
+            <span class="edu-award"><i class="bx bx-trophy"></i> 1st Place Best Paper Award — SBC</span>
+          </div>
+
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="60">
+            <span class="edu-date">2017 – 2019</span>
+            <h3>M.Sc. in Computer Engineering</h3>
+            <p class="edu-school">Universidade Federal do Rio Grande (FURG)</p>
+            <p class="edu-desc">Fuzzy logic for neural network enhancement in Computer Vision. Academic exchange at the University of Navarra, Spain.</p>
+            <span class="edu-award"><i class="bx bx-trophy"></i> 2nd Place Best Paper — NAFIPS 2018</span>
+            <span class="edu-award"><i class="bx bx-trophy"></i> Outstanding Student Paper — NAFIPS 2019</span>
+          </div>
+
+          <div class="edu-card" data-aos="fade-up">
+            <span class="edu-date">2013 – 2016</span>
+            <h3>B.Sc. in Information Systems</h3>
+            <p class="edu-school">Faculdades Integradas de Cacoal (UNESC)</p>
+            <p class="edu-desc">Monograph on the application of fuzzy logic in the animal feed industry using by-products such as bone meal and meat meal.</p>
+          </div>
+
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="60">
+            <span class="edu-date">2013 – 2015</span>
+            <h3>Technologist in Systems Analysis and Development</h3>
+            <p class="edu-school">Faculdades Integradas de Cacoal (UNESC)</p>
+            <p class="edu-desc">Monograph project: a complete system built with Embarcadero Delphi for deposit and management of seized assets for the Federal Police of Rondônia.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Publications ======= -->
+    <section id="publications" class="section alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="eyebrow">Publications</span>
+          <h2>Research &amp; publications</h2>
+          <p>86 citations · h-index 3 · <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=73dzoHUAAAAJ" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600;">view full profile on Google Scholar ↗</a></p>
+        </div>
+
+        <div class="pub-list">
+
+          <div class="pub-item" data-aos="fade-up">
+            <div class="pub-main">
+              <h3>Parallel-Hierarchical Multi-Task Learning for Skin Lesion Classification</h3>
+              <div class="pub-meta">
+                <span>ENIAC · BRACIS 2025</span>
+                <span class="pub-award"><i class="bx bx-trophy"></i> 1st Place Best Paper Award (SBC)</span>
+              </div>
+            </div>
+            <a href="https://sol.sbc.org.br/index.php/eniac/article/view/38728" target="_blank" rel="noopener noreferrer" class="pub-link" title="Read paper"><i class="bx bx-link-external"></i></a>
+          </div>
+
+          <div class="pub-item" data-aos="fade-up">
+            <div class="pub-main">
+              <h3>Using the Choquet Integral in the Pooling Layer in Deep Learning Networks</h3>
+              <div class="pub-meta">
+                <span>NAFIPS 2018</span>
+                <span class="pub-award"><i class="bx bx-trophy"></i> 2nd Place Best Paper Award</span>
+                <span class="pub-cit">49 citations</span>
+              </div>
+            </div>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-319-95312-0_13" target="_blank" rel="noopener noreferrer" class="pub-link" title="Read paper"><i class="bx bx-link-external"></i></a>
+          </div>
+
+          <div class="pub-item" data-aos="fade-up">
+            <div class="pub-main">
+              <h3>Simulating the Behaviour of Choquet-like (Pre) Aggregation Functions for Image Resizing in the Pooling Layer</h3>
+              <div class="pub-meta">
+                <span>IFSA/NAFIPS 2019</span>
+                <span class="pub-award"><i class="bx bx-trophy"></i> Outstanding Student Paper Award</span>
+                <span class="pub-cit">24 citations</span>
+              </div>
+            </div>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-21920-8_21" target="_blank" rel="noopener noreferrer" class="pub-link" title="Read paper"><i class="bx bx-link-external"></i></a>
+          </div>
+
+          <div class="pub-item" data-aos="fade-up">
+            <div class="pub-main">
+              <h3>Aggregation Functions Based on the Choquet Integral Applied to Image Resizing</h3>
+              <div class="pub-meta">
+                <span>EUSFLAT 2019</span>
+                <span class="pub-cit">12 citations</span>
+              </div>
+            </div>
+            <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=73dzoHUAAAAJ" target="_blank" rel="noopener noreferrer" class="pub-link" title="View on Google Scholar"><i class="bx bx-link-external"></i></a>
+          </div>
+
+          <div class="pub-item" data-aos="fade-up">
+            <div class="pub-main">
+              <h3>Funções de Agregação Baseadas em Integral de Choquet Aplicadas em Redimensionamento de Imagens</h3>
+              <div class="pub-meta">
+                <span>Revista Brasileira de Computação Aplicada, 11(1), 2019</span>
+                <span class="pub-cit">1 citation</span>
+              </div>
+            </div>
+            <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=73dzoHUAAAAJ" target="_blank" rel="noopener noreferrer" class="pub-link" title="View on Google Scholar"><i class="bx bx-link-external"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's talk</h2>
+          <p>Open to discussing opportunities, collaborations or projects in Machine Learning, Computer Vision and Applied AI.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <a href="mailto:cmdias@outlook.com.br" class="contact-card" data-aos="fade-up">
+            <div class="work-icon"><i class="bx bx-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>cmdias@outlook.com.br</p>
+            </div>
+          </a>
+
+          <a href="tel:+5511970560916" class="contact-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="work-icon"><i class="bx bx-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+55 (11) 9 7056-0916</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/camilalvesdias/" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="fade-up">
+            <div class="work-icon"><i class="bx bxl-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/camilalvesdias</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/cmdiasbr" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="work-icon"><i class="bx bxl-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/cmdiasbr</p>
+            </div>
+          </a>
+
+          <a href="http://lattes.cnpq.br/1548809558838460" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="fade-up">
+            <div class="work-icon"><i class="bx bx-id-card"></i></div>
+            <div>
+              <h4>Lattes CV</h4>
+              <p>Academic curriculum (CNPq)</p>
+            </div>
+          </a>
+
+          <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=73dzoHUAAAAJ" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="work-icon"><i class="bx bxs-graduation"></i></div>
+            <div>
+              <h4>Google Scholar</h4>
+              <p>Publications &amp; citations</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
+  <footer>
+    <div class="container" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; width:100%;">
+      <p>&copy; <span id="year"></span> Camila Alves Dias. All rights reserved.</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/cmladias/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/cmdiasbr" class="linkedin"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/camilalvesdias/" target="_blank" rel="noopener noreferrer" class="icon-link"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/cmdiasbr" target="_blank" rel="noopener noreferrer" class="icon-link"><i class="bx bxl-github"></i></a>
+        <a href="mailto:cmdias@outlook.com.br" class="icon-link"><i class="bx bx-envelope"></i></a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#hero" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- Vendor JS -->
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Site JS -->
+  <script src="assets/js/clean.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
