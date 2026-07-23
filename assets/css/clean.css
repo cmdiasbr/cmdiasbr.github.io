@@ -179,6 +179,30 @@ p { margin: 0; }
   background: var(--bg-alt);
 }
 
+.nav-link-highlight {
+  background: var(--accent-soft) !important;
+  color: var(--accent) !important;
+}
+
+.nav-link-highlight:hover { background: var(--accent) !important; color: #fff !important; }
+
+.hero-negocios-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.92rem;
+  border: 1px dashed var(--accent-2);
+  transition: all 0.15s ease;
+}
+
+.hero-negocios-link:hover { background: var(--accent); color: #fff; border-style: solid; }
+.hero-negocios-link strong { color: inherit; }
+
 .nav-resume-btn {
   display: inline-flex;
   align-items: center;
