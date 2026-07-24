@@ -54,6 +54,11 @@ a.portfolio-card:hover {
   color: var(--text-soft);
 }
 
+.portfolio-flag.demo {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
 .portfolio-icon {
   width: 48px;
   height: 48px;
